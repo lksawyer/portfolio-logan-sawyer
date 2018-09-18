@@ -1,0 +1,284 @@
+/* Color Pallet 
+
+section light color: #fff;
+section dark color: #282e34;
+
+dark accent color: #26a69a;
+
+*/
+
+html {
+    color: #282e34;
+}
+
+html, body, header{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+}
+
+.parallax-image{
+    /* Setup for full screen */
+    position:relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    /* Actual Image */
+    background-image:url('../img/stock.jpg');
+    min-height:100%;
+}
+
+.parallax-overlay {
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.parallax-text {
+    position:absolute;
+    top:40%;
+    width:100%;
+    text-align:center;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.parallax-text .border{
+    padding: 20px;
+    border: 4px solid #282e34;
+}
+
+.parallax-text p {
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+nav {
+    position:absolute;
+    top: 5%;
+    background-color: transparent;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.14), 0 0px 0px 0px rgba(0,0,0,0.12), 0 0px 0px 0 rgba(0,0,0,0.2); /* removes materialize box-shadow for nav */
+}
+
+nav ul a {
+    color: #282e34;
+    text-transform: uppercase;
+    font-weight:1000;
+}
+
+nav ul a:hover {
+    background-color: #fff;
+}
+section {
+    text-transform: uppercase;
+}
+
+section p {
+    text-transform: none;
+}
+
+/* About Me */
+
+.spacer {
+    padding: 3rem;
+}
+
+/* .test1 {
+    background-color: green;   
+}
+
+.test2 {
+    background-color: red;   
+} */
+
+.btn-large {
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.14), 0 0px 0px 0px rgba(0,0,0,0.12), 0 0px 0px 0 rgba(0,0,0,0.2); /* removes materialize box-shadow for nav */
+}
+
+#aboutme-container {
+    position: relative;
+    width: 100%;
+    background-color: #282e34;
+    top: -7rem;
+}
+
+#aboutme-text {
+    width: 100%;
+    height: 100%;
+    background-color: #282e34;
+    border: 2px solid #26a69a;
+    color: #fff;
+}
+
+#aboutme-text p {
+    position: relative;
+    margin-top: 0rem;
+}
+
+#aboutme-text p span {
+    position: absolute;
+    background-color: #282e34;
+    padding: 1rem;
+    top: -5rem;
+    text-transform: uppercase;
+    font-size: 2.28rem;
+    
+}
+
+/* Tech Stack */
+
+/* Masonry */
+
+.grid-item { width: 25%; }
+.grid-item-width-2 { width: 50%; }
+.grid-item-width-3 { width: 75%; }
+.grid-item, .grid-item-width-2, .grid-item-width-3 { float: left; background-color: gray; border: 1px solid black }
+
+/*------*/
+
+#tech-stack-container {
+    position: relative;
+    padding-top: 7rem;
+}
+
+.stack-row {
+    position: relative;
+    width: 100%;
+    margin-bottom: .75rem;
+}
+
+.stack-item {
+    float: left;
+    position: relative;
+    width: 33.33%;
+    border-radius: 50%;
+}
+
+/* Keeps aspect ratio */
+.stack-item:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+}
+
+.stack-item img {
+    position:  absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* border-radius: 50%; */
+    padding: .1875rem;
+}
+
+/* .stack-row:first-of-type .stack-item:nth-child(even) {
+    visibility: hidden;
+}
+
+.stack-row:last-of-type .stack-item:nth-child(odd) {
+    visibility: hidden;
+} */
+
+/* Portfolio */
+
+.portfolio-row {
+    position: relative;
+    width: 100%; 
+}
+
+.portfolio-item {
+    float: left;
+    position: relative;
+    width: 33.3%;
+}
+
+.portfolio-item-overlay {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: #282e34;
+    opacity: .85;
+    bottom: 0;
+    color: #fff;
+    transition: height 1s;
+    overflow: hidden;
+}
+
+.portfolio-item-overlay div {
+    padding: 2em;
+}
+
+.portfolio-item:hover > .portfolio-item-overlay {
+    height: 25%;
+}
+
+.portfolio-item-overlay p span a {
+    color: #fff;
+}
+
+/* Keeps aspect ratio */
+.portfolio-item:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 100%;
+}
+
+.portfolio-item img {
+    position:  absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+/* Contact Me */
+
+#contactme {
+    background-color: #26a69a;
+}
+
+#contactme .container .row {
+    margin-bottom: 0px;
+}
+
+/* Footer */
+
+footer{
+    position: relative;
+    height: 5rem;
+    background-color:#282e34;
+    color: #fff;
+}
+
+footer div {
+    position: relative;
+    height: 100%;
+}
+
+footer div h6{
+    position: relative;
+    width: 100%;
+}
+
